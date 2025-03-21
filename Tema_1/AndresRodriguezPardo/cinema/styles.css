@@ -1,4 +1,11 @@
-/* Reset default styles */
+:root {
+    --primary-color: #1a237e;
+    --occupied-color: #ffd700;
+    --background-color: #ffffff;
+    --text-color: #333333;
+    --border-color: #1a237e;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,10 +14,103 @@
 
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 
 header {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 1rem;
     text-align: center;
+}
+
+.cinema-container {
+    max-width: 1000px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.screen {
+    background-color: #eee;
+    height: 70px;
+    width: 100%;
+    margin: 15px 0;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 5px;
+}
+
+.seats-container {
+    margin: 2rem 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0.5rem 0;
+}
+
+.row-label {
+    color: var(--text-color);
+    width: 60px;
+    text-align: right;
+    margin-right: 1rem;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    border: 2px solid var(--border-color);
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat.occupied {
+    background-color: var(--occupied-color);
+    cursor: not-allowed;
+}
+
+.booking-section {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.seat-count {
+    padding: 0.5rem;
+    width: 100px;
+    margin: 1rem;
+    border: 1px solid var(--border-color);
+}
+
+.confirm-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.confirm-btn:hover {
+    opacity: 0.9;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
     padding: 2rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cinema-info {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.cinema-info p {
+    margin: 0.5rem 0;
 }

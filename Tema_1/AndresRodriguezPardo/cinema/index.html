@@ -1,20 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cinema Project</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UNIR-CINEMA</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
     <header>
-        <h1>Cinema Project</h1>
+      <h1>UNIR-CINEMA</h1>
     </header>
     <main>
-        <!-- Content will go here -->
+      <div class="cinema-container">
+        <div class="screen">PANTALLA</div>
+        <div class="seats-container">
+          <div class="row">
+            <span class="row-label">Fila 1</span>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <!-- Repeat for other rows -->
+          <div class="row">
+            <span class="row-label">Fila 2</span>
+            <div class="seat occupied"></div>
+            <div class="seat occupied"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+            <div class="seat"></div>
+          </div>
+          <!-- Add rows 3-5 with similar structure -->
+        </div>
+        <div class="booking-section">
+          <p>Indica cuántos asientos quieres reservar</p>
+          <input type="number" min="1" max="10" class="seat-count" />
+          <button class="confirm-btn">Confirmar Reserva</button>
+        </div>
+      </div>
     </main>
     <footer>
-        <!-- Footer content -->
+      <div class="cinema-info">
+        <h2>Cine UNIR-CINEMA</h2>
+        <p>Dirección: Calle falsa 123</p>
+        <p>Teléfono: 604 3450000</p>
+        <p>Email: cinefullstack@unicinema.com</p>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
