@@ -1,0 +1,26 @@
+.pantalla {
+    background: darkslategray;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+.asiento {
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.disponible {
+    background-color: #28a745;
+    color: white;
+}
+.ocupado {
+    background-color: #dc3545;
+    color: white;
+    cursor: not-allowed;
+}
