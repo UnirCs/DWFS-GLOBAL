@@ -1,0 +1,53 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.cv-container {
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    padding: 30px;
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 4px solid #4CAF50;
+    margin-bottom: 15px;
+}
+.subtitle {
+    color: #4CAF50;
+    font-weight: bold;
+}
+h1, h2 {
+    color: #4CAF50;
+}
+section {
+    margin-top: 20px;
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+li {
+    margin: 5px 0;
+    background-color: #e8f5e9;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+.experiencia ul li {
+    text-align: left;
+}
+.resumen p {
+    background-color: #d9fdd3;
+    padding: 10px;
+    border-radius: 8px;
+}

@@ -1,0 +1,52 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title {
+    color: #FFD700;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.screen {
+    background-color: #3a3a3a;
+    color: #ffffff;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+}
+.seat {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border: 2px solid yellow;
+    border-radius: 5px;
+    margin: 2px;
+    cursor: pointer;
+}
+.seat.reserved {
+    background-color: yellow; 
+}
+
+.selected {
+    background-color: #4CAF50;
+}
+.legend-item {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #fff;
+    margin-right: 5px;
+}
+.available { background-color: transparent; }
+.reserved { background-color: yellow; }
+.selected { background-color: #4CAF50; }
+footer {
+    background-color: #3a3a3a;
+    padding: 10px 0;
+    font-size: 14px;
+    border-radius: 8px;
+} 

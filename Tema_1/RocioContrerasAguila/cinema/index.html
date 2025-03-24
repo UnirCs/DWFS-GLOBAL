@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Butacas</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5 text-center">
+        <h1 class="title">🎬 UNIR-CINEMA 🎬</h1>
+        <div class="screen mb-4">PANTALLA</div>
+
+        <table class="table table-dark table-bordered text-center">
+            <thead>
+                <tr>
+                    <td colspan="13" class="legend">
+                        <span class="legend-item available"></span> Disponible
+                        <span class="legend-item reserved"></span> Reservado
+                        <span class="legend-item selected"></span> Seleccionado
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Fila 1</td>
+                    <td class="seat"></td><td class="seat"></td><td class="seat reserved"></td><td class="seat"></td>
+                    <td class="seat"></td><td class="seat"></td><td class="seat"></td><td class="seat"></td>
+                    <td class="seat"></td><td class="seat"></td>
+                    <td class="seat"></td><td class="seat"></td>
+                </tr>
+                <tr>
+                    <td>Fila 2</td>
+                    <td class="seat"></td><td class="seat"></td><td class="seat"></td><td class="seat"></td>
+                    <td class="seat reserved"></td><td class="seat"></td><td class="seat"></td><td class="seat"></td>
+                    <td class="seat"></td><td class="seat"></td>
+                    <td class="seat"></td><td class="seat"></td>
+                </tr>
+                <tr>
+                    <td>Fila 3</td>
+                    <td class="seat"></td><td class="seat"></td><td class="seat"></td><td class="seat reserved"></td>
+                    <td class="seat"></td><td class="seat"></td><td class="seat"></td><td class="seat"></td>
+                    <td class="seat"></td><td class="seat"></td>
+                    <td class="seat"></td><td class="seat"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <p class="mt-3 text-warning">Indica cuántos asientos quieres reservar</p>
+        <input type="number" class="form-control mx-auto" style="width: 100px;">
+        <button class="btn btn-warning mt-3">Confirmar Reserva</button>
+
+        <footer class="mt-4 text-white">
+            Cine UNIR-CINEMA - Dirección: Av. Siempre Viva 123 - Teléfono: +56 9 8765 4321 - Email: info@unircinema.com<br>
+            🌐 <a href="#" class="text-warning">www.unircinema.com</a> | 📲 Redes Sociales: @UNIR-CINEMA
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
