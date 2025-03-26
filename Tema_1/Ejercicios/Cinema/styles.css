@@ -1,0 +1,67 @@
+.unir-text {
+    font-family: monospace; /* Fuente. Mas Info https://developer.mozilla.org/en-US/docs/Web/CSS/font-family */
+}
+
+.unir-header {
+    font-style: italic; /* Cursiva */
+    font-size: 2rem
+}
+ .header {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     width: 100%;
+     height: 4rem;
+     background-color: khaki;
+ }
+.text-screen {
+    color: white;
+}
+.screen {
+    width: 100%;
+    height: 10rem;
+    background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.row-generic {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.row-generic > .seat {
+    width: 2rem;
+    height: 2rem;
+    border: 2px solid blue;
+}
+
+.occupied{
+    background-color: blue;
+}
+
+.seat-reservation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-reservation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-reservation > .label-seat {
+    text-align: center !important;
+}
+.footer {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: khaki;
+}
