@@ -1,0 +1,165 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.header {
+    background-color: #0d253f;
+    color: white;
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+
+.screen {
+    background: linear-gradient(to bottom, #e0e0e0, #b0b0b0);
+    height: 30px;
+    width: 80%;
+    margin: 0 auto 40px;
+    border-radius: 50%/20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+    position: relative;
+    text-align: center;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seats-container {
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.seat-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.row-label {
+    width: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.seat {
+    width: 30px;
+    height: 30px;
+    margin: 0 5px;
+    border-radius: 5px;
+    background-color: #28a745;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.seat:hover {
+    transform: scale(1.1);
+}
+
+.seat.selected {
+    background-color: #007bff;
+}
+
+.seat.occupied {
+    background-color: #dc3545;
+    cursor: not-allowed;
+}
+
+.seat.vip {
+    background-color: #ffc107;
+    color: #333;
+}
+
+.seat.vip.selected {
+    background-color: #fd7e14;
+}
+
+.legend {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+}
+
+.legend-color {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    margin-right: 8px;
+}
+
+.legend-color.available {
+    background-color: #28a745;
+}
+
+.legend-color.selected {
+    background-color: #007bff;
+}
+
+.legend-color.occupied {
+    background-color: #dc3545;
+}
+
+.legend-color.vip-available {
+    background-color: #ffc107;
+}
+
+.legend-color.vip-selected {
+    background-color: #fd7e14;
+}
+
+.reservation-form {
+    max-width: 500px;
+    margin: 0 auto 40px;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.footer {
+    background-color: #0d253f;
+    color: white;
+    padding: 30px 0;
+    margin-top: 40px;
+}
+
+.footer a {
+    color: #90cea1;
+}
+
+.footer a:hover {
+    color: #01b4e4;
+    text-decoration: none;
+}
+
+.btn-reserve {
+    background-color: #01b4e4;
+    border: none;
+    padding: 10px 25px;
+    font-weight: bold;
+}
+
+.btn-reserve:hover {
+    background-color: #0099c7;
+}
+
+.selected-seats-display {
+    min-height: 38px;
+    background-color: #f8f9fa;
+}
