@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>UNIR CINEMA - Reserva de Butacas</title>
+    <link rel="stylesheet" href="cinema.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+</head>
+<body>
+    <div class="header text-center" >
+        <h1>UNIR - CINEMA</h1>
+        <p class = "mb-0">Reserva Butaca</p>
+    </div>
+
+    <div class="container">
+        <div class="screen">PANTALLA</div>
+        <!--Fila A -->
+        <div class="seat-row">
+            <div class="row-label">A</div>
+            <div class="seat" data-row="A" data-seat="1">1</div>
+            <div class="seat" data-row="A" data-seat="2">2</div>
+            <div class="seat" data-row="A" data-seat="3">3</div>
+            <div class="seat" data-row="A" data-seat="3">4</div>
+            <div class="seat" data-row="A" data-seat="4">5</div>
+            <div class="seat" data-row="A" data-seat="5">6</div>
+            <div class="seat" data-row="A" data-seat="6">7</div>
+            <div class="seat" data-row="A" data-seat="7">8</div>
+        </div>
+        <!--Fila B -->
+        <div class="seat-row">
+            <div class="row-label">B</div>
+            <div class="seat" data-row="B" data-seat="1">1</div>
+            <div class="seat" data-row="B" data-seat="2">2</div>
+            <div class="seat occupied" data-row="B" data-seat="3">3</div>
+            <div class="seat occupied" data-row="B" data-seat="3">4</div>
+            <div class="seat" data-row="B" data-seat="4">5</div>
+            <div class="seat" data-row="B" data-seat="5">6</div>
+            <div class="seat" data-row="B" data-seat="6">7</div>
+            <div class="seat" data-row="B" data-seat="7">8</div>
+        </div>
+        <!-- Fila C (VIP) -->
+        <div class="seat-row">
+            <div class="row-label">C</div>
+            <div class="seat vip" data-row="C" data-seat="1">1</div>
+            <div class="seat vip" data-row="C" data-seat="2">2</div>
+            <div class="seat vip occupied" data-row="C" data-seat="3">3</div>
+            <div class="seat vip" data-row="C" data-seat="4">4</div>
+            <div class="seat vip" data-row="C" data-seat="5">5</div>
+            <div class="seat vip occupied" data-row="C" data-seat="6">6</div>
+            <div class="seat vip" data-row="C" data-seat="7">7</div>
+            <div class="seat vip" data-row="C" data-seat="8">8</div>
+        </div>
+        <!-- Fila D -->
+        <div class="seat-row">
+            <div class="row-label">D</div>
+            <div class="seat" data-row="D" data-seat="1">1</div>
+            <div class="seat" data-row="D" data-seat="2">2</div>
+            <div class="seat" data-row="D" data-seat="3">3</div>
+            <div class="seat occupied" data-row="D" data-seat="4">4</div>
+            <div class="seat occupied" data-row="D" data-seat="5">5</div>
+            <div class="seat" data-row="D" data-seat="6">6</div>
+            <div class="seat" data-row="D" data-seat="7">7</div>
+            <div class="seat" data-row="D" data-seat="8">8</div>
+        </div>
+        <!-- Fila E -->
+        <div class="seat-row">
+            <div class="row-label">E</div>
+            <div class="seat" data-row="E" data-seat="1">1</div>
+            <div class="seat" data-row="E" data-seat="2">2</div>
+            <div class="seat" data-row="E" data-seat="3">3</div>
+            <div class="seat" data-row="E" data-seat="4">4</div>
+            <div class="seat" data-row="E" data-seat="5">5</div>
+            <div class="seat" data-row="E" data-seat="6">6</div>
+            <div class="seat" data-row="E" data-seat="7">7</div>
+            <div class="seat" data-row="E" data-seat="8">8</div>
+        </div>
+    </div>
+    <div class="legend">
+        <div class="legend-item">
+            <div class="legend-color available"></div>
+            <span>Disponible</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color selected"></div>
+            <span>Seleccionado</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color vip-available"></div>
+            <span>VIP Disponibles</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color vip-selected"></div>
+            <span>VIP Seleccionado</span>
+        </div>
+    </div>
+
+    <div class="reservation-form">
+        <h3 class="text=center mb-4" >Reerva tus butacas</h3>
+        <form id="booking-form">
+            <div class="mb-3">
+                <label for="num-seats" class="form-label">Número de butacas:</label>
+                <select class="form-select" id="num-seats">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label class="form-label">Seleccion de las Butacas:</label>
+                <div id="selected-seats" class="form-control selected-seats-display"></div>
+            </div>
+            <div class="text-center">
+                <button type="button" class="form-control selected-seats-display">Confirmar Reserva</button>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="col-md-4">
+                <h5>UNIR - CINEMA</h5>
+                <p>Cinematografia</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Contacto</h5>
+                <p><i class="bi bi-geo-alt"></i>Calle Quito, Quevedo, Ecuador </p>
+                <p><i class="bi bi-telephone"></i>+593 981203817</p>
+                <p><i class="bi bi-envelope"></i>info@unir-cinema.com</p>
+            </div>
+            <div class="col-md-4">
+                <h5>Horarios</h5>
+                <p>Lunes a Viernes: 15:00 - 22:30</p>
+                <p>Sabando y domingo: 11:00 - 21:30</p>
+            </div>
+            <div class="text=center mt-3">
+                <p class="mb-0">&copy; 2024 UNIR-CINEMA. Todos los derechos reservados</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        const seats = document.querySelectorAll('.seat:not(.occupied)');
+        const selectedSeatsDisplay = document.getElementById('selected-seats');
+        const numSeatsInput = document.getElementById('num-seats');
+        const reserveButton = document.querySelector('button[type="button"]'); // Cambiado para que coincida con tu HTML
+
+        let selectedSeats = [];
+
+        seats.forEach(seat => {
+            seat.addEventListener('click', function() {
+                const seatRow = this.getAttribute('data-row');
+                const seatNumber = this.getAttribute('data-seat');
+                const seatId = `${seatRow}${seatNumber}`;
+
+                if (this.classList.contains('selected')) {
+                    this.classList.remove('selected');
+                    selectedSeats = selectedSeats.filter(seat => seat !== seatId);
+                } else {
+                    const numSeats = parseInt(numSeatsInput.value);
+                    if (selectedSeats.length >= numSeats) {
+                        alert(`Solo puedes seleccionar ${numSeats} butacas.`);
+                        return;
+                    }
+                    this.classList.add('selected');
+                    selectedSeats.push(seatId);
+                }
+                updateSelectedSeatsDisplay();
+            });
+        });
+
+        numSeatsInput.addEventListener('change', function() {
+            const numSeats = parseInt(this.value);
+            if (selectedSeats.length > numSeats) {
+                alert(`Has reducido el número de butacas a ${numSeats}. Tu selección ha sido restablecida.`);
+                clearSelection();
+            }
+        });
+
+        if (reserveButton) {
+            reserveButton.addEventListener('click', function() {
+                const numSeats = parseInt(numSeatsInput.value);
+                if (selectedSeats.length === 0) {
+                    alert('Por favor, selecciona una butaca');
+                    return;
+                }
+                if (selectedSeats.length < numSeats) {
+                    alert(`Has seleccionado ${selectedSeats.length} butacas de ${numSeats} solicitadas.`);
+                    return;
+                } else {
+                    alert(`Sus butacas confirmadas: ${selectedSeats.join(', ')}`);
+                    clearSelection();
+                }
+            });
+        }
+
+        function updateSelectedSeatsDisplay() {
+            selectedSeatsDisplay.textContent = selectedSeats.length > 0
+                ? selectedSeats.join(', ')
+                : 'No ha seleccionado nada';
+        }
+
+        function clearSelection() {
+            selectedSeats = [];
+            document.querySelectorAll('.seat.selected').forEach(seat => {
+                seat.classList.remove('selected');
+            });
+            updateSelectedSeatsDisplay();
+        }
+    });
+
+    </script>
+
+
+</body>
+</html>
