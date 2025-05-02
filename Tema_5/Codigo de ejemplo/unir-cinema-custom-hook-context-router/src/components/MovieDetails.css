@@ -1,0 +1,18 @@
+/* Bloque: movie-details */
+.movie-details {
+    text-align: center;
+    padding: 2rem;
+}
+
+.movie-details__trailer {
+    margin: 2rem auto;
+    max-width: 640px;
+}
+
+.movie-details__info {
+    margin-top: 1rem;
+}
+
+.movie-details__sessions {
+    margin-top: 1rem;
+}

@@ -1,0 +1,31 @@
+.cinema-detail {
+    padding: 2rem;
+    text-align: center;
+}
+
+.cinema-detail__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.cinema-detail__info {
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+}
+
+.cinema-detail__back {
+    margin-top: 1.5rem;
+}
+
+.cinema-detail__back-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.cinema-detail__back-button:hover {
+    background-color: #0056b3;
+}

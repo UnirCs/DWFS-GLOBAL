@@ -1,0 +1,15 @@
+/* Bloque: session-language-selector */
+.session-language-selector {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.session-language-selector__label {
+    margin-right: 0.5rem;
+}
+
+.session-language-selector__select {
+    padding: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+}

@@ -1,0 +1,14 @@
+.about-us {
+    padding: 2rem;
+    text-align: center;
+}
+
+.about-us__title {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.about-us__text {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}

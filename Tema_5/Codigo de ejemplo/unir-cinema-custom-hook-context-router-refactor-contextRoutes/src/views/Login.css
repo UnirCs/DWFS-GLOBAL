@@ -1,0 +1,125 @@
+/* Login.css */
+
+/* Contenedor principal de la vista de login */
+.login {
+    max-width: 400px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    position: relative;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Modo oscuro para la vista de login */
+.App.dark-mode .login {
+    background-color: #2a2a2a;
+    color: #f5f5f5;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+/* Título de la vista de login */
+.login__title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Contenedor para las cintas de cine (film strips) */
+.login__film-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Opcional: para posicionar las cintas por encima del formulario */
+.login__film-container--top {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Cada cinta de cine */
+.login__film {
+    width: 40px;
+    height: 40px;
+    background: repeating-linear-gradient(45deg, #444, #444 4px, #888 4px, #888 8px);
+    border-radius: 4px;
+    animation: filmSpin 3s linear infinite;
+}
+
+/* Animación de giro para las cintas */
+@keyframes filmSpin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Formulario de login */
+.login__form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Grupo de cada input del formulario */
+.login__form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Etiquetas de los inputs */
+.login__label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+/* Inputs del formulario */
+.login__input {
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.login__input:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Modo oscuro para los inputs */
+.App.dark-mode .login__input {
+    background-color: #444;
+    border-color: #666;
+    color: #f5f5f5;
+}
+
+/* Mensaje de error */
+.login__error {
+    color: red;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+/* Botón de envío */
+.login__button {
+    padding: 0.7rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.login__button:hover {
+    background-color: #0056b3;
+}

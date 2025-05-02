@@ -1,0 +1,36 @@
+/* Bloque: seat-selection */
+.seat-selection {
+    text-align: center;
+    padding: 2rem;
+}
+
+.seat-selection__screen {
+    margin: 1rem auto;
+    width: 60%;
+    padding: 0.5rem;
+    background-color: #ccc;
+    font-weight: bold;
+    text-align: center;
+}
+
+.seat-selection__seats {
+    display: inline-block;
+}
+
+.seat-selection__row {
+    display: flex;
+}
+
+.seat-selection__seat {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    background-color: #ddd;
+    border: 1px solid #999;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.seat-selection__seat--selected {
+    background-color: #007bff;
+}

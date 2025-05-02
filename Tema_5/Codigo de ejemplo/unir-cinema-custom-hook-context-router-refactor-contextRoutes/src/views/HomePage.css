@@ -1,0 +1,29 @@
+/* Bloque: home-page */
+.home-page {
+    text-align: center;
+    padding: 2rem;
+}
+
+.home-page__title {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.home-page__cinema-buttons {
+    margin-top: 2rem;
+}
+
+.home-page__cinema-button {
+    margin: 0.5rem;
+    padding: 1rem 2rem;
+    font-size: 1rem;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.home-page__cinema-button:hover {
+    background-color: #0056b3;
+}
