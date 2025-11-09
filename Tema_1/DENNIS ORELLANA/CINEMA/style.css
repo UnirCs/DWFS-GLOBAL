@@ -1,0 +1,73 @@
+body {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+.screen {
+  background: linear-gradient(to bottom, #bbb, #777);
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+  padding: 8px;
+  margin-bottom: 25px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(255,255,255,0.2);
+}
+
+.seat {
+  width: 35px;
+  height: 35px;
+  margin: 6px;
+  border-radius: 8px;
+  display: inline-block;
+  border: 1px solid rgba(255,255,255,0.2);
+  color: #ccc;
+}
+
+.available {
+  background-color: #28a745;
+}
+
+.occupied {
+  background-color: #dc3545;
+}
+
+.selected {
+  background-color: #ffc107;
+}
+
+.seat:hover {
+  transform: scale(1.1);
+  transition: 0.2s;
+  opacity: 0.8;
+}
+
+.seat-label {
+  width: 30px;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  color: #ccc;
+}
+
+.legend {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.legend-item {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 10px;
+}
+
+.legend-color {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 6px;
+}
+
+.legend-available { background-color: #28a745;}
+.legend-occupied { background-color: #dc3545; }
+.legend-selected { background-color: #ffc107; }
