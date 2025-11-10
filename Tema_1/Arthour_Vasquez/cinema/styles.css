@@ -1,0 +1,711 @@
+/* ===========================
+   ESTILOS GLOBALES - PREMIUM
+   =========================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=Lora:wght@400;500;600&display=swap');
+
+body {
+    background-color: #0f0f0f;
+    color: #2a2a2a;
+    font-family: 'Lora', serif;
+    min-height: 100vh;
+    padding: 3rem 0;
+    letter-spacing: 0.03em;
+}
+
+/* ===========================
+   BLOQUE: CINEMA
+   =========================== */
+
+.cinema {
+    width: 100%;
+    position: relative;
+}
+
+.cinema__background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a1a 100%);
+    z-index: -1;
+}
+
+.cinema__container {
+    max-width: 1200px;
+    position: relative;
+    z-index: 1;
+}
+
+/* ===========================
+   ELEMENTO: HEADER PREMIUM
+   =========================== */
+
+.cinema__header {
+    background: linear-gradient(135deg, #f5f1e8 0%, #ede6db 100%);
+    color: #1a1a1a;
+    padding: 4rem 3rem;
+    border-radius: 3px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4),
+                inset 0 0 0 1px rgba(0, 0, 0, 0.1);
+    margin-bottom: 3rem;
+    text-align: center;
+    position: relative;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.cinema__ornament {
+    font-size: 1.5rem;
+    color: #b8860b;
+    letter-spacing: 0.3em;
+    font-weight: 300;
+}
+
+.cinema__header-decoration {
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
+}
+
+.cinema__header-decoration--bottom {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+}
+
+.cinema__title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    letter-spacing: 0.15em;
+    color: #1a1a1a;
+    text-transform: uppercase;
+}
+
+.cinema__subtitle {
+    font-family: 'Lora', serif;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.8;
+    font-style: italic;
+    color: #3a3a3a;
+    font-weight: 400;
+}
+
+.cinema__header-line {
+    width: 80px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #b8860b 20%, #b8860b 80%, transparent 100%);
+    margin: 1.5rem auto;
+}
+
+.cinema__movie {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+}
+
+.cinema__info {
+    font-size: 1rem;
+    opacity: 0.75;
+    margin: 0;
+    color: #3a3a3a;
+    font-weight: 500;
+}
+
+/* ===========================
+   ELEMENTO: SCREEN PREMIUM
+   =========================== */
+
+.cinema__screen {
+    background: radial-gradient(circle at center, #000 0%, #1a1a1a 100%);
+    border: 8px solid #b8860b;
+    border-radius: 2px;
+    padding: 3rem 2rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5),
+                inset 0 0 30px rgba(0, 0, 0, 0.8);
+    aspect-ratio: 4/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cinema__screen-content {
+    position: relative;
+    z-index: 1;
+}
+
+.cinema__screen-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    color: #b8860b;
+    opacity: 0.9;
+    text-transform: uppercase;
+}
+
+/* ===========================
+   ELEMENTO: LEGEND PREMIUM
+   =========================== */
+
+.cinema__legend {
+    background: linear-gradient(135deg, #f5f1e8 0%, #ede6db 100%);
+    padding: 2.5rem 3rem;
+    border-radius: 3px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+}
+
+.cinema__legend-divider {
+    width: 1px;
+    height: 60px;
+    background: linear-gradient(180deg, transparent 0%, #b8860b 50%, transparent 100%);
+    opacity: 0.5;
+}
+
+.cinema__legend-content {
+    display: flex;
+    justify-content: center;
+    gap: 4rem;
+    flex-wrap: wrap;
+}
+
+.cinema__legend-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.cinema__legend-text {
+    font-weight: 500;
+    font-size: 0.95rem;
+    color: #1a1a1a;
+    letter-spacing: 0.05em;
+}
+
+/* ===========================
+   ELEMENTO: SEAT PREMIUM
+   =========================== */
+
+.cinema__seat {
+    width: 38px;
+    height: 38px;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 0;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Estados de butacas */
+
+.cinema__seat--available {
+    background: linear-gradient(135deg, #c0c0c0 0%, #a9a9a9 100%);
+    border: 2px solid #808080;
+}
+
+.cinema__seat--available:hover {
+    transform: scale(1.12) translateY(-4px);
+    box-shadow: 0 8px 20px rgba(184, 134, 11, 0.4),
+                0 0 15px rgba(184, 134, 11, 0.2);
+    background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+    border-color: #b8860b;
+}
+
+.cinema__seat--occupied {
+    background: linear-gradient(135deg, #4a4a4a 0%, #2a2a2a 100%);
+    border: 2px solid #1a1a1a;
+    cursor: not-allowed;
+    opacity: 0.5;
+}
+
+.cinema__seat--occupied:hover {
+    transform: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.cinema__seat--selected {
+    background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+    border: 2px solid #8b7500;
+    animation: cinema__animation--pulse-gold 0.8s ease-in-out;
+    box-shadow: 0 6px 16px rgba(184, 134, 11, 0.4);
+}
+
+.cinema__seat--selected:hover {
+    transform: scale(1.12) translateY(-4px);
+    box-shadow: 0 8px 24px rgba(184, 134, 11, 0.6),
+                0 0 20px rgba(184, 134, 11, 0.3);
+    background: linear-gradient(135deg, #e8c547 0%, #d4af37 100%);
+}
+
+.cinema__seat--premium {
+    background: linear-gradient(135deg, #2d5016 0%, #1f3a0f 100%);
+    border: 2px solid #0d1708;
+    position: relative;
+}
+
+.cinema__seat--premium::before {
+    content: "⬛";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #d4af37;
+    font-size: 0.9rem;
+    font-weight: bold;
+}
+
+.cinema__seat--premium:hover {
+    transform: scale(1.12) translateY(-4px);
+    box-shadow: 0 8px 20px rgba(212, 175, 55, 0.3),
+                0 0 15px rgba(212, 175, 55, 0.2);
+    background: linear-gradient(135deg, #3d6b1f 0%, #2d5016 100%);
+    border-color: #d4af37;
+}
+
+/* Animación de pulso dorado */
+@keyframes cinema__animation--pulse-gold {
+    0%, 100% {
+        box-shadow: 0 4px 12px rgba(184, 134, 11, 0.3);
+    }
+    50% {
+        box-shadow: 0 8px 24px rgba(184, 134, 11, 0.6);
+    }
+}
+
+/* ===========================
+   ELEMENTO: SEAT-GAP
+   =========================== */
+
+.cinema__seat-gap {
+    width: 24px;
+    height: 0;
+}
+
+/* ===========================
+   ELEMENTO: SEATS-CONTAINER
+   =========================== */
+
+.cinema__seats-container {
+    background: linear-gradient(135deg, #f5f1e8 0%, #ede6db 100%);
+    padding: 3.5rem 3rem;
+    border-radius: 3px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.cinema__row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.cinema__row:last-child {
+    margin-bottom: 0;
+}
+
+.cinema__row--premium {
+    background: linear-gradient(90deg, transparent 0%, rgba(212, 175, 55, 0.05) 50%, transparent 100%);
+    padding: 1.5rem;
+    border-radius: 2px;
+    border: 1px dashed rgba(184, 134, 11, 0.3);
+    margin: 2.5rem 0;
+}
+
+.cinema__row-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 700;
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    min-width: 40px;
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+
+.cinema__row-badge {
+    position: absolute;
+    right: 0;
+    top: -1.8rem;
+    font-size: 0.75rem;
+    color: #b8860b;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.cinema__seats-row {
+    display: flex;
+    justify-content: center;
+    gap: 0.6rem;
+    flex: 1;
+}
+
+/* ===========================
+   ELEMENTO: SELECTION-INFO PREMIUM
+   =========================== */
+
+.cinema__selection-info {
+    background: linear-gradient(135deg, #f5f1e8 0%, #ede6db 100%);
+    padding: 3rem;
+    border-radius: 3px;
+    box-shadow: 0 15px 45px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-left: 4px solid #b8860b;
+}
+
+.cinema__selection-info-header {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cinema__selection-info-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.cinema__selection-info-line {
+    width: 60px;
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #b8860b 50%, transparent 100%);
+    margin: 0 auto;
+}
+
+.cinema__selection-info-body {
+    margin-bottom: 1.5rem;
+}
+
+.cinema__selection-info-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 0;
+    font-size: 1.05rem;
+    color: #2a2a2a;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.cinema__selection-info-item--service {
+    color: #555;
+}
+
+.cinema__selection-info-label {
+    font-weight: 600;
+    color: #1a1a1a;
+    letter-spacing: 0.05em;
+}
+
+.cinema__selection-info-value {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #b8860b;
+}
+
+.cinema__selection-info-divider {
+    height: 2px;
+    background: linear-gradient(90deg, transparent 0%, #b8860b 50%, transparent 100%);
+    margin: 1.5rem 0;
+    opacity: 0.4;
+}
+
+.cinema__selection-info-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 0;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    letter-spacing: 0.05em;
+}
+
+.cinema__selection-info-value-total {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.6rem;
+    color: #b8860b;
+}
+
+/* ===========================
+   ELEMENTO: ACTIONS PREMIUM
+   =========================== */
+
+.cinema__actions {
+    display: flex;
+    justify-content: center;
+    gap: 2.5rem;
+    flex-wrap: wrap;
+}
+
+.cinema__btn {
+    font-family: 'Lora', serif;
+    font-weight: 600;
+    padding: 1rem 3rem;
+    font-size: 1.05rem;
+    letter-spacing: 0.1em;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 2px solid;
+    border-radius: 2px;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+}
+
+.cinema__btn-text {
+    position: relative;
+    z-index: 1;
+}
+
+/* Modificador: Primary */
+.cinema__btn--primary {
+    background: linear-gradient(135deg, #d4af37 0%, #b8860b 100%);
+    color: #1a1a1a;
+    border-color: #8b7500;
+    box-shadow: 0 8px 24px rgba(184, 134, 11, 0.3);
+}
+
+.cinema__btn--primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 36px rgba(184, 134, 11, 0.5),
+                0 0 20px rgba(184, 134, 11, 0.3);
+    background: linear-gradient(135deg, #e8c547 0%, #d4af37 100%);
+}
+
+.cinema__btn--primary:active {
+    transform: translateY(0);
+}
+
+/* Modificador: Secondary */
+.cinema__btn--secondary {
+    background: transparent;
+    color: #b8860b;
+    border-color: #b8860b;
+    box-shadow: none;
+}
+
+.cinema__btn--secondary:hover {
+    background: #b8860b;
+    color: #1a1a1a;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(184, 134, 11, 0.3);
+}
+
+.cinema__btn--secondary:active {
+    transform: translateY(0);
+}
+
+/* ===========================
+   ELEMENTO: FOOTER
+   =========================== */
+
+.cinema__footer {
+    text-align: center;
+    padding-top: 2rem;
+    border-top: 1px solid rgba(184, 134, 11, 0.2);
+    margin-top: 3rem;
+}
+
+.cinema__footer-text {
+    font-size: 0.9rem;
+    color: #888;
+    letter-spacing: 0.05em;
+    font-style: italic;
+}
+
+/* ===========================
+   RESPONSIVE DESIGN
+   =========================== */
+
+@media (max-width: 768px) {
+    body {
+        padding: 2rem 0;
+    }
+
+    .cinema__header {
+        padding: 2.5rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .cinema__title {
+        font-size: 2.3rem;
+    }
+
+    .cinema__subtitle {
+        font-size: 1rem;
+    }
+
+    .cinema__movie {
+        font-size: 1.3rem;
+    }
+
+    .cinema__info {
+        font-size: 0.9rem;
+    }
+
+    .cinema__screen {
+        aspect-ratio: 2/1;
+        padding: 2rem 1.5rem;
+    }
+
+    .cinema__screen-label {
+        font-size: 1.2rem;
+    }
+
+    .cinema__seat {
+        width: 32px;
+        height: 32px;
+    }
+
+    .cinema__legend {
+        padding: 1.5rem;
+        gap: 2rem;
+        flex-direction: column;
+    }
+
+    .cinema__legend-content {
+        gap: 2rem;
+    }
+
+    .cinema__legend-divider {
+        width: 40px;
+        height: 1px;
+    }
+
+    .cinema__seats-container {
+        padding: 2rem 1.5rem;
+    }
+
+    .cinema__row {
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+    }
+
+    .cinema__row-label {
+        font-size: 1.2rem;
+        min-width: 35px;
+    }
+
+    .cinema__selection-info {
+        padding: 2rem;
+    }
+
+    .cinema__selection-info-title {
+        font-size: 1.4rem;
+    }
+
+    .cinema__selection-info-item {
+        font-size: 0.95rem;
+    }
+
+    .cinema__selection-info-total {
+        font-size: 1.1rem;
+    }
+
+    .cinema__btn {
+        padding: 0.8rem 2rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .cinema__header {
+        padding: 2rem 1rem;
+    }
+
+    .cinema__title {
+        font-size: 1.8rem;
+    }
+
+    .cinema__subtitle {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+
+    .cinema__movie {
+        font-size: 1.1rem;
+    }
+
+    .cinema__info {
+        font-size: 0.85rem;
+    }
+
+    .cinema__seat {
+        width: 28px;
+        height: 28px;
+    }
+
+    .cinema__seat-gap {
+        width: 16px;
+    }
+
+    .cinema__seats-container {
+        padding: 1.5rem 1rem;
+    }
+
+    .cinema__row {
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .cinema__row-label {
+        font-size: 1rem;
+        min-width: 30px;
+    }
+
+    .cinema__seats-row {
+        gap: 0.4rem;
+    }
+
+    .cinema__selection-info {
+        padding: 1.5rem 1rem;
+    }
+
+    .cinema__selection-info-title {
+        font-size: 1.2rem;
+    }
+
+    .cinema__selection-info-item {
+        font-size: 0.9rem;
+    }
+
+    .cinema__actions {
+        gap: 1rem;
+    }
+
+    .cinema__btn {
+        padding: 0.7rem 1.5rem;
+        font-size: 0.9rem;
+        width: 100%;
+    }
+
+    .cinema__footer-text {
+        font-size: 0.8rem;
+    }
+}

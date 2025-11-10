@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Cinema - Selección de Butacas</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="cinema">
+        <div class="cinema__background"></div>
+        
+        <div class="container-fluid cinema__container">
+            <!-- Header Premium -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="cinema__header">
+                        <div class="cinema__header-decoration cinema__header-decoration--top">
+                            <span class="cinema__ornament">◆ ◇ ◆</span>
+                        </div>
+                        <h1 class="cinema__title">ELITE CINEMA</h1>
+                        <p class="cinema__subtitle">Reserve su experiencia cinematográfica</p>
+                        <div class="cinema__header-line"></div>
+                        <p class="cinema__movie">Aventura en el Espacio 3D</p>
+                        <p class="cinema__info">Sesión: 20:30 | Sala Premium 1</p>
+                        <div class="cinema__header-decoration cinema__header-decoration--bottom">
+                            <span class="cinema__ornament">◆ ◇ ◆</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mt-5">
+                <div class="col-lg-9 col-md-11 col-sm-12">
+                    <!-- Pantalla Premium -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="cinema__screen">
+                                <div class="cinema__screen-content">
+                                    <span class="cinema__screen-label">PANTALLA IMAX 4K</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Leyenda Premium -->
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <div class="cinema__legend">
+                                <div class="cinema__legend-divider"></div>
+                                <div class="cinema__legend-content">
+                                    <div class="cinema__legend-item">
+                                        <span class="cinema__seat cinema__seat--available"></span>
+                                        <span class="cinema__legend-text">Disponible</span>
+                                    </div>
+                                    <div class="cinema__legend-item">
+                                        <span class="cinema__seat cinema__seat--selected"></span>
+                                        <span class="cinema__legend-text">Seleccionado</span>
+                                    </div>
+                                    <div class="cinema__legend-item">
+                                        <span class="cinema__seat cinema__seat--occupied"></span>
+                                        <span class="cinema__legend-text">Ocupado</span>
+                                    </div>
+                                    <div class="cinema__legend-item">
+                                        <span class="cinema__seat cinema__seat--premium"></span>
+                                        <span class="cinema__legend-text">Premium Reclinable</span>
+                                    </div>
+                                </div>
+                                <div class="cinema__legend-divider"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Filas de Butacas -->
+                    <div class="row mt-5">
+                        <div class="col-12">
+                            <div class="cinema__seats-container">
+                                <!-- Fila A -->
+                                <div class="cinema__row">
+                                    <div class="cinema__row-label">A</div>
+                                    <div class="cinema__seats-row">
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca A1"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca A2"></button>
+                                        <button class="cinema__seat cinema__seat--occupied" aria-label="Butaca A3"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca A4"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca A5"></button>
+                                        <div class="cinema__seat-gap"></div>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca A6"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca A7"></button>
+                                        <button class="cinema__seat cinema__seat--occupied" aria-label="Butaca A8"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca A9"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca A10"></button>
+                                    </div>
+                                </div>
+
+                                <!-- Fila B -->
+                                <div class="cinema__row">
+                                    <div class="cinema__row-label">B</div>
+                                    <div class="cinema__seats-row">
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca B1"></button>
+                                        <button class="cinema__seat cinema__seat--selected" aria-label="Butaca B2"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca B3"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca B4"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca B5"></button>
+                                        <div class="cinema__seat-gap"></div>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca B6"></button>
+                                        <button class="cinema__seat cinema__seat--selected" aria-label="Butaca B7"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca B8"></button>
+                                        <button class="cinema__seat cinema__seat--occupied" aria-label="Butaca B9"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca B10"></button>
+                                    </div>
+                                </div>
+
+                                <!-- Fila C (Premium) -->
+                                <div class="cinema__row cinema__row--premium">
+                                    <div class="cinema__row-label">C</div>
+                                    <div class="cinema__seats-row">
+                                        <button class="cinema__seat cinema__seat--premium" aria-label="Butaca C1 Premium"></button>
+                                        <button class="cinema__seat cinema__seat--premium" aria-label="Butaca C2 Premium"></button>
+                                        <button class="cinema__seat cinema__seat--premium" aria-label="Butaca C3 Premium"></button>
+                                        <button class="cinema__seat cinema__seat--premium" aria-label="Butaca C4 Premium"></button>
+                                        <button class="cinema__seat cinema__seat--premium" aria-label="Butaca C5 Premium"></button>
+                                        <div class="cinema__seat-gap"></div>
+                                        <button class="cinema__seat cinema__seat--premium" aria-label="Butaca C6 Premium"></button>
+                                        <button class="cinema__seat cinema__seat--premium" aria-label="Butaca C7 Premium"></button>
+                                        <button class="cinema__seat cinema__seat--premium" aria-label="Butaca C8 Premium"></button>
+                                        <button class="cinema__seat cinema__seat--premium" aria-label="Butaca C9 Premium"></button>
+                                        <button class="cinema__seat cinema__seat--premium" aria-label="Butaca C10 Premium"></button>
+                                    </div>
+                                    <span class="cinema__row-badge">Premium Reclinable</span>
+                                </div>
+
+                                <!-- Fila D -->
+                                <div class="cinema__row">
+                                    <div class="cinema__row-label">D</div>
+                                    <div class="cinema__seats-row">
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca D1"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca D2"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca D3"></button>
+                                        <button class="cinema__seat cinema__seat--occupied" aria-label="Butaca D4"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca D5"></button>
+                                        <div class="cinema__seat-gap"></div>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca D6"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca D7"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca D8"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca D9"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca D10"></button>
+                                    </div>
+                                </div>
+
+                                <!-- Fila E -->
+                                <div class="cinema__row">
+                                    <div class="cinema__row-label">E</div>
+                                    <div class="cinema__seats-row">
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca E1"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca E2"></button>
+                                        <button class="cinema__seat cinema__seat--selected" aria-label="Butaca E3"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca E4"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca E5"></button>
+                                        <div class="cinema__seat-gap"></div>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca E6"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca E7"></button>
+                                        <button class="cinema__seat cinema__seat--occupied" aria-label="Butaca E8"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca E9"></button>
+                                        <button class="cinema__seat cinema__seat--available" aria-label="Butaca E10"></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Información de Selección Premium -->
+                    <div class="row mt-5 mb-4">
+                        <div class="col-12">
+                            <div class="cinema__selection-info">
+                                <div class="cinema__selection-info-header">
+                                    <h3 class="cinema__selection-info-title">Resumen de Reserva</h3>
+                                    <div class="cinema__selection-info-line"></div>
+                                </div>
+                                <div class="cinema__selection-info-body">
+                                    <p class="cinema__selection-info-item">
+                                        <span class="cinema__selection-info-label">Butacas Seleccionadas:</span>
+                                        <span class="cinema__selection-info-value">B2, B7, E3</span>
+                                    </p>
+                                    <p class="cinema__selection-info-item">
+                                        <span class="cinema__selection-info-label">Precio Unitario:</span>
+                                        <span class="cinema__selection-info-value">€18,50</span>
+                                    </p>
+                                    <p class="cinema__selection-info-item cinema__selection-info-item--service">
+                                        <span class="cinema__selection-info-label">Tarifa de Servicio:</span>
+                                        <span class="cinema__selection-info-value">€2,00</span>
+                                    </p>
+                                    <div class="cinema__selection-info-divider"></div>
+                                    <p class="cinema__selection-info-total">
+                                        <span class="cinema__selection-info-label">TOTAL:</span>
+                                        <span class="cinema__selection-info-value-total">€56,50</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Botones de Acción Premium -->
+                    <div class="row mb-5">
+                        <div class="col-12">
+                            <div class="cinema__actions">
+                                <button class="cinema__btn cinema__btn--primary">
+                                    <span class="cinema__btn-text">Proceder al Pago</span>
+                                </button>
+                                <button class="cinema__btn cinema__btn--secondary">
+                                    <span class="cinema__btn-text">Cancelar</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="cinema__footer">
+                                <p class="cinema__footer-text">© 2024 Elite Cinema - La Experiencia Cinematográfica de Lujo</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
