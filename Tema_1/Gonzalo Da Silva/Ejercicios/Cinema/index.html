@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selección de Butacas - Cinema</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container py-5">
+        <div class="cinema-container">
+            <header class="text-center mb-5">
+                <h1 class="cinema-title">Cinema Premium</h1>
+                <p class="cinema-subtitle">Selecciona tus butacas para disfrutar de la mejor experiencia</p>
+            </header>
+
+            <div class="row">
+                <div class="col-lg-8 col-md-8 col-sm-12">
+                    <div class="movie-info card panel panel-default mb-4">
+                        <div class="card-body panel-body">
+                            <h3 class="card-title">Película Seleccionada</h3>
+                            <div class="d-flex align-items-center gap-3">
+                                <select class="form-control" id="movie-select">
+                                    <option value="15">Avatar: El Camino del Agua - $15.00</option>
+                                    <option value="12">Top Gun: Maverick - $12.00</option>
+                                    <option value="13">The Batman - $13.00</option>
+                                    <option value="10">Spider-Man: No Way Home - $10.00</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="screen-container mb-4">
+                        <div class="screen">PANTALLA</div>
+                    </div>
+
+                    <div class="seats-container">
+                        <div class="legend mb-3">
+                            <div class="legend-item">
+                                <div class="seat available"></div>
+                                <span>Disponible</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="seat selected"></div>
+                                <span>Seleccionada</span>
+                            </div>
+                            <div class="legend-item">
+                                <div class="seat occupied"></div>
+                                <span>Ocupada</span>
+                            </div>
+                        </div>
+
+                        <div class="seats-grid">
+                            <div class="row-seats">
+                                <span class="row-label">A</span>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                            </div>
+                            <div class="row-seats">
+                                <span class="row-label">B</span>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat occupied"></div>
+                                <div class="seat occupied"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                            </div>
+                            <div class="row-seats">
+                                <span class="row-label">C</span>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat occupied"></div>
+                                <div class="seat occupied"></div>
+                            </div>
+                            <div class="row-seats">
+                                <span class="row-label">D</span>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                            </div>
+                            <div class="row-seats">
+                                <span class="row-label">E</span>
+                                <div class="seat available"></div>
+                                <div class="seat occupied"></div>
+                                <div class="seat occupied"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                            </div>
+                            <div class="row-seats">
+                                <span class="row-label">F</span>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                                <div class="seat available"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-4 col-sm-12">
+                    <div class="summary-card card panel panel-default">
+                        <div class="card-body panel-body">
+                            <h4 class="card-title mb-4">Resumen de Compra</h4>
+                            
+                            <div class="summary-item">
+                                <span class="summary-label">Butacas seleccionadas:</span>
+                                <span class="summary-value" id="selected-count">0</span>
+                            </div>
+
+                            <div class="summary-item">
+                                <span class="summary-label">Precio por butaca:</span>
+                                <span class="summary-value">$<span id="ticket-price">15.00</span></span>
+                            </div>
+
+                            <hr class="my-3">
+
+                            <div class="summary-total">
+                                <span class="total-label">Total:</span>
+                                <span class="total-value">$<span id="total-price">0.00</span></span>
+                            </div>
+
+                            <div class="selected-seats-list mt-4" id="selected-seats-display">
+                                <p class="text-muted small">Selecciona tus butacas en el mapa</p>
+                            </div>
+
+                            <button class="btn btn-primary btn-lg btn-block btn-confirm">
+                                Confirmar Reserva
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
