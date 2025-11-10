@@ -8,3 +8,7 @@ console.log("Hello Dilemma!");
 console.log("Hello Dilemma!");
 console.log("Hello Dilemma!");
 //console.log("Hello Dilemma!);
+
+
+console.log(i4); //Undefined
+var i4 = "hola";

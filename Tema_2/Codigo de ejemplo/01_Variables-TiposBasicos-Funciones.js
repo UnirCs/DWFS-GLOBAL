@@ -6,7 +6,7 @@ console.log("Hola mundo!");
 /**
  * Declaracion de variables
  * Usamos let, var y const, su diferencia es el ambito y modificacion
- * Los ambitos se delimitan por corchetes curly { }
+ * Los ambitos se delimitan por corchetes curly { } (salvo los de bucles y condicionales)
  */
 
 var i = "global1";
