@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(82, 136, 136);
+    margin: 0;
+    padding: 20px;
+}
+
+.cinema_seats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    background: #090d13;
+    height: auto;
+    width: 100%;
+    margin-top: 30px;
+    padding: 10px 0;
+}
+
+footer p {
+    color: #ffffff;
+    text-align: center;
+    margin: 4px 0;
+    margin-top: 15px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+}
+
+.btn.btn-primary {
+    background: #090d13;
+    border-color: #090d13;
+    margin: 2px;
+    width: 40px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.btn.reserva {
+    background: #00ff4c;
+    border-color: #090d13;
+    margin: 2px;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+}
+
+.cinema_name {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background: #ffffff;
+    height: 50px;
+}
+
+.row span {
+    background: #ffffff;
+    width: 100px;
+    height: 40px;
+    border-radius: 6px;
+    margin-right: 16px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.cinema_screen {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.cinema_screen div {
+    background: #757272;
+    width: 80%;
+    height: 200px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+
+}
+
+.cinema_reservations {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px
+}

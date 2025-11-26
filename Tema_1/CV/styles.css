@@ -1,0 +1,93 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(82, 136, 136);
+    margin: 0;
+    padding: 20px;
+}
+
+.photo_name {
+    align-items: center;
+    display: flex;
+    background-color: rgb(110, 167, 159);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #3e5c4a;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+}
+
+.contact_box {
+    background-color: #6fa188;
+    padding-bottom: 16px;
+    border: 2px solid #3e5c4a;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+}
+
+.contact_box_1 {
+    display: flex;
+    align-items: center;
+    padding-left: 24px;
+}
+
+.info_box {
+    font-family: Arial, sans-serif;
+    background-color: #6fa188;
+    padding-bottom: 16px;
+    border: 2px solid #3e5c4a;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    margin-bottom: 24px;
+}
+
+h1 {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    font-size: 30px;
+    padding-left: 12px;
+}
+
+
+h2 {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    font-size: 20px;
+    padding-left: 24px;
+}
+
+p {
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
+
+.info_box p {
+    padding-left: 48px;
+}
+
+.photo_name img {
+    border-radius: 12px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.photo_name p {
+    font-family: Arial, sans-serif;
+    color: #000000;
+    font-size: 30px;
+    padding-left: 12px;
+    margin-bottom: 2px;
+    margin-top: 2px;
+}
+
+.bold_type { 
+    font-weight: bold;
+}
+
+ul {
+    padding-left: 48px;
+    font-family: Arial, sans-serif;
+    color: #000000;
+}
